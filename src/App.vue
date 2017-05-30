@@ -1,8 +1,12 @@
 <template>
   <div id="app">
+    <app-menu></app-menu>
     <img src="./assets/logo.png">
     <h1>{{ msg }}</h1>
     <el-button @click.native="startHacking">Let's do it</el-button>
+    <el-button>Default Button</el-button>
+    <el-button type="primary">Primary Button</el-button>
+    <el-button type="text">Text Button</el-button>
   </div>
 </template>
 
@@ -10,7 +14,7 @@
 export default {
   data () {
     return {
-      msg: 'Use FlowBI!'
+      msg: 'Use FlowBI today!'
     }
   },
 
