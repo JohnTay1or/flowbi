@@ -1,6 +1,10 @@
 <template>
   <el-menu :default-active="activeIndex2" class="el-menu-demo" mode="horizontal" @select="handleSelect">
-    <el-menu-item index="1">FlowBI</el-menu-item>
+    <el-menu-item index="1">
+      <div class="container">
+        <img src="./assets/FlowBI Logo.png" class="image">
+      </div>
+    </el-menu-item>
     <el-submenu index="2">
       <template slot="title">Visualization</template>
       <el-menu-item index="2-1">Map</el-menu-item>
@@ -25,3 +29,18 @@
     }
   }
 </script>
+
+<style>
+.container {
+    width: 100px;
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* resize images */
+.container img {
+    width: 100%;
+    height: auto;
+}
+</style>
