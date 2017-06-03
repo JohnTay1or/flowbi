@@ -3,6 +3,7 @@
     <app-menu></app-menu>
     <!--<h1>{{ msg }}</h1>-->
     <app-visual></app-visual>
+    <app-customer></app-customer>
     <el-button @click.native="startHacking">Let's do it</el-button>
     <!--<el-button>Default Button</el-button>
     <el-button type="primary">Primary Button</el-button>

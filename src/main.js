@@ -4,6 +4,7 @@ import 'element-ui/lib/theme-default/index.css'
 import App from './App.vue'
 import Menu from './Menu.vue'
 import Visual from './Visual.vue'
+import Customer from './Customer.vue'
 import * as pbi from 'powerbi-client'
 
 console.log('Hello')
@@ -17,6 +18,7 @@ Vue.use(ElementUI)
 
 Vue.component('app-menu', Menu)
 Vue.component('app-visual', Visual)
+Vue.component('app-customer', Customer)
 
 new Vue({
   el: '#app',
