@@ -1,16 +1,18 @@
 <template>
   <el-menu :default-active="activeIndex2" class="el-menu-demo" mode="horizontal" @select="handleSelect">
     <el-menu-item index="1">
-      <div class="container">
-        <img src="./assets/FlowBI Logo.png" class="image">
-      </div>
+      <router-link to="/">
+        <div class="container">
+          <img src="./assets/FlowBI Logo.png" class="image">
+        </div>
+      </router-link>
     </el-menu-item>
     <el-submenu index="2">
       <template slot="title">Visualization</template>
-      <el-menu-item index="2-1">Map</el-menu-item>
-      <el-menu-item index="2-2">Trend</el-menu-item>
+      <el-menu-item index="2-1"><router-link to="/visual">Map</router-link></el-menu-item>
+      <el-menu-item index="2-2"><router-link to="/visual">Trend</router-link></el-menu-item>
     </el-submenu>
-    <el-menu-item index="3">Maintain Data</el-menu-item>
+    <el-menu-item index="3"><router-link to="/customer">Maintain Data</router-link></el-menu-item>
   </el-menu>
 </template>
 

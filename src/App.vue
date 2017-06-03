@@ -1,13 +1,7 @@
 <template>
   <div id="app">
     <app-menu></app-menu>
-    <!--<h1>{{ msg }}</h1>-->
-    <app-visual></app-visual>
-    <app-customer></app-customer>
-    <el-button @click.native="startHacking">Let's do it</el-button>
-    <!--<el-button>Default Button</el-button>
-    <el-button type="primary">Primary Button</el-button>
-    <el-button type="text">Text Button</el-button>-->
+    <router-view></router-view>
   </div>
 </template>
 
@@ -15,17 +9,6 @@
 export default {
   data () {
     return {
-      msg: 'Use FlowBI today!'
-    }
-  },
-
-  methods: {
-    startHacking () {
-      this.$notify({
-        title: 'It Works',
-        message: 'We have laid the groundwork for you. Now it\'s your time to build something epic!',
-        duration: 6000
-      })
     }
   }
 }
