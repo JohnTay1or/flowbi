@@ -17,7 +17,7 @@ Vue.use(ElementUI)
 Vue.use(VueRouter)
 Vue.use(VueResource)
 //Vue.http.options.root = 'http://127.0.0.1:1337/api/'
-Vue.http.options.root = 'https://flowbi.herokuapp.com/api'
+Vue.http.options.root = 'http://flowbi.azurewebsites.net/api/'
 
 Vue.component('app-menu', Menu)
 
