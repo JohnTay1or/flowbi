@@ -9,8 +9,10 @@
     </el-menu-item>
     <el-submenu index="2">
       <template slot="title">Visualization</template>
-      <el-menu-item index="2-1"><router-link to="/visual">Map</router-link></el-menu-item>
-      <el-menu-item index="2-2"><router-link to="/visual">Trend</router-link></el-menu-item>
+      <el-menu-item index="2-1"><a href="http://127.0.0.1:1337/">Map</a></el-menu-item>
+      <!--<el-menu-item index="2-1"><router-link to="/visual">Map</router-link></el-menu-item>
+      <el-menu-item index="2-2"><router-link to="/visual">Trend</router-link></el-menu-item>-->
+
     </el-submenu>
     <el-menu-item index="3"><router-link to="/customer">Maintain Data</router-link></el-menu-item>
   </el-menu>
